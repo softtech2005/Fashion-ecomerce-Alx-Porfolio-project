@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include 'shop/header.html' %}
+    <main>
+        <section class="hero">
+            <h2>Welcome to Fashion Store</h2>
+            <p>Your one-stop shop for the latest fashion trends</p>
+            <a href="{% url 'shop' %}" class="btn">Shop Now</a>
+        </section>
+    </main>
+</body>
+</html>

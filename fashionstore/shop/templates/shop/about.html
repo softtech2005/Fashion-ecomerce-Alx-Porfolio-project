@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fashion Store</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% include 'shop/header.html' %}
+    <main>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Fashion Store is your one-stop shop for the latest fashion trends. Founded in 2024, we aim to provide high-quality and stylish clothing for all occasions.</p>
+        </section>
+    </main>
+    {% include 'shop/footer.html' %}
+</body>
+</html>

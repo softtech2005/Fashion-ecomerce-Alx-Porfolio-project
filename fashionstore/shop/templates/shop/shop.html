@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Fashion Store</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    {% include 'shop/header.html' %}
+    <main>
+        <section class="product-grid">
+            {% for product in products %}
+            <div class="product">
+                <a href="{% url 'product_detail' product.id %}">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <h2>{{ product.name }}</h2>
+                </a>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>
