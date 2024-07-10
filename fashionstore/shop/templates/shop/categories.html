@@ -1,0 +1,11 @@
+<!-- shop/templates/shop/categories.html -->
+{% extends "shop/base.html" %}
+
+{% block content %}
+<h1>Categories</h1>
+<ul>
+    <li><a href="{% url 'category_men' %}">Men</a></li>
+    <li><a href="{% url 'category_women' %}">Women</a></li>
+    <li><a href="{% url 'category_kids' %}">Kids</a></li>
+</ul>
+{% endblock %}
